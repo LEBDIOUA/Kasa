@@ -1,0 +1,20 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 57px;
+  width: fit-content;
+  a {
+    font-size: clamp(24px, 1.66vw, 24px);
+    color: black;
+    &.active {
+      text-decoration: underline;
+    }
+  }
+
+  @media #{$mobile} {
+    gap: 26px;
+    a {
+      font-size: clamp(12px, 3.12vw, 24px);
+    }
+  }
+}

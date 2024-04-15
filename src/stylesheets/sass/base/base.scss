@@ -1,0 +1,39 @@
+body {
+  width: 100%;
+  max-width: 1440px;
+  padding: 30px 0px 0px 0px;
+  font-family: "Montserrat", sans-serif;
+  overflow: auto;
+  &.loading {
+    overflow: hidden;
+  }
+  @media #{$mobile} {
+    padding: 20px 0px 0px 0px;
+  }
+}
+
+#root {
+  width: 100%;
+  height: fit-content;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+
+  &.loading {
+    position: relative;
+  }
+}
+
+main {
+  flex-grow: 1;
+}
+
+.lien,
+button,
+.clickable-div,
+.slideShow .fa-solid {
+  cursor: pointer;
+}

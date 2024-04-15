@@ -1,0 +1,135 @@
+.gallerie {
+  gap: 25px;
+
+  .appartDetails {
+    display: inherit;
+    flex-direction: column;
+    gap: 25px;
+
+    .details,
+    .detailsToggler {
+      display: inherit;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .appartInfoTags,
+    .hostRating {
+      display: inherit;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 25px;
+    }
+    .details {
+      @media #{$mobile} {
+        flex-direction: column;
+        gap: 15px;
+      }
+      .appartInfoTags {
+        flex-grow: 1;
+        .titleLocation {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          h1 {
+            font-size: clamp(30px, 2.5vw, 36px);
+            font-weight: 500;
+            color: $color-principal;
+            @media #{$mobile} {
+              font-size: clamp(18px, 2.34vw, 18px);
+            }
+          }
+          h3 {
+            color: $txt-black;
+            font-size: clamp(18px, 1.25vw, 18px);
+            font-weight: 500;
+            @media #{$mobile} {
+              font-size: clamp(14px, 1.82vw, 14px);
+            }
+          }
+        }
+
+        .tags {
+          display: grid;
+          grid-template-columns: repeat(3, 200px);
+          column-gap: 10px;
+          justify-content: flex-start;
+
+          @media #{$medium} {
+            grid-template-columns: repeat(3, 150px);
+          }
+
+          @media #{$mobile} {
+            grid-template-columns: repeat(3, 100px);
+          }
+
+          @media #{$small} {
+            grid-template-columns: repeat(3, 1fr);
+          }
+        }
+      }
+
+      .hostRating {
+        align-items: flex-end;
+        @media #{$mobile} {
+          flex-direction: row-reverse;
+          align-items: center;
+        }
+
+        .hostInfo {
+          display: inherit;
+          flex-direction: row;
+          gap: 10px;
+          width: 100%;
+          flex-grow: 1;
+          align-items: center;
+          justify-content: right;
+          align-items: flex-start;
+          img {
+            width: 66px;
+            height: 66px;
+            border-radius: 33px;
+          }
+          h2 {
+            color: $color-principal;
+            font-size: clamp(13px, 1.25vw, 18px);
+            line-height: 30px;
+            font-weight: 500;
+            text-align: right;
+            width: 90px;
+
+            @media #{$mobile} {
+              font-size: clamp(12px, 1.56vw, 12px);
+            }
+
+            @media #{$small} {
+              width: 70px;
+            }
+          }
+        }
+      }
+    }
+
+    .detailsToggler {
+      @media #{$mobile} {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .group {
+        max-width: 582px;
+        @media #{$mobile} {
+          width: 100%;
+          max-width: 100%;
+        }
+
+        .clickable-div * {
+          color: $txt-white;
+          font-size: clamp(13px, 1.25vw, 18px);
+          font-weight: 700;
+          line-height: 25.67px;
+        }
+      }
+    }
+  }
+}

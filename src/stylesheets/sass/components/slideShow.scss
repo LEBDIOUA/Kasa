@@ -1,0 +1,39 @@
+.slideShow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 450px;
+  position: relative;
+  border-radius: 25px;
+  padding: 30px;
+
+  @media #{$mobile} {
+    height: 255px;
+  }
+
+  .pagination {
+    font-weight: 500;
+    font-size: clamp(18px, 1.25vw, 18px);
+    line-height: 25.67px;
+    align-self: flex-end;
+
+    @media #{$mobile} {
+      visibility: hidden;
+    }
+  }
+
+  .pagination,
+  .fa-solid {
+    color: $txt-white;
+  }
+
+  .fa-solid {
+    font-size: clamp(47px, 3.26vw, 47px);
+
+    @media #{$mobile} {
+      font-size: clamp(24px, 3.12vw, 24px);
+    }
+  }
+}

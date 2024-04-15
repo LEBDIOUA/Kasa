@@ -1,0 +1,26 @@
+header {
+  width: calc(100% - (2 * 100px));
+  height: 64px;
+  margin: 0px 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  @media #{$medium} {
+    width: calc(100% - (2 * 50px));
+  }
+
+  @media #{$mobile} {
+    width: calc(100% - (2 * 20px));
+  }
+
+  .logo {
+    width: auto;
+    height: 64px;
+
+    @media #{$medium} {
+      height: 46px;
+    }
+  }
+}

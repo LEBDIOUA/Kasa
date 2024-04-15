@@ -1,0 +1,38 @@
+.aPropos {
+  gap: 38px;
+
+  .mainContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-self: center;
+
+    &.detailsToggler {
+      padding: 0px 100px;
+
+      @media #{$medium} {
+        padding: 0px 50px;
+      }
+
+      @media #{$mobile} {
+        padding: 0px;
+      }
+
+      .clickable-div * {
+        color: $txt-white;
+        font-size: clamp(24px, 1.66vw, 24px);
+        font-weight: 700;
+        line-height: 25.67px;
+
+        @media #{$medium} {
+          font-size: clamp(14px, 1.36vw, 14px);
+        }
+
+        @media #{$mobile} {
+          font-size: clamp(13px, 1.69vw, 13px);
+        }
+      }
+    }
+  }
+}

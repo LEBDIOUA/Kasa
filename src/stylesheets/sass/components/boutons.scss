@@ -1,0 +1,16 @@
+button {
+  background-color: $color-principal;
+  border-radius: 10px;
+  height: fit-content;
+  min-height: 100%;
+  color: $txt-white;
+  font-size: clamp(14px, 0.97vw, 14px);
+  font-weight: 700;
+  padding: 10px 0px;
+
+  @media #{$mobile} {
+    padding: 3px 0px;
+    height: fit-content;
+    font-size: clamp(10px, 1.3vw, 10px);
+  }
+}

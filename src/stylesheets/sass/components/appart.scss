@@ -1,0 +1,25 @@
+.appart {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+
+  .appartTitle {
+    color: $txt-white;
+    height: 52px;
+    font-size: clamp(13px, 1.25vw, 18px);
+    font-weight: 700;
+    line-height: 24px;
+
+    @media #{$medium} {
+      font-size: clamp(13px, 1.75vw, 18px);
+    }
+
+    @media #{$mobile} {
+      font-size: clamp(18px, 3.12vw, 24px);
+    }
+  }
+}

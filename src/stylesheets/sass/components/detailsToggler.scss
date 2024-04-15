@@ -1,0 +1,83 @@
+.detailsToggler {
+  gap: 76px;
+  .group {
+    display: inherit;
+    flex-direction: column;
+    background-color: $bgColor;
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    transition: height 2s;
+
+    &.noClicked {
+      gap: 0;
+    }
+
+    &.clicked {
+      gap: 10px;
+    }
+
+    div {
+      padding: 10px;
+
+      &.clickable-div {
+        display: inherit;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: $color-principal;
+        width: 100%;
+        height: 54px;
+        align-items: center;
+        border-radius: 5px;
+
+        @media #{$mobile} {
+          height: 30px;
+        }
+      }
+
+      &.invisible {
+        height: 0;
+        width: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: $color-principal;
+        visibility: hidden;
+        transition:
+          background-color 2s,
+          width 2s ease,
+          height 2s ease,
+          visibility 0s;
+      }
+
+      &.visible {
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        padding: 10px 20px 10px 10px;
+        overflow: auto;
+        visibility: visible;
+        background-color: $bgColor;
+        transition:
+          background-color 2s,
+          width 2s ease,
+          height 2s ease,
+          visibility 0s;
+
+        p,
+        ul li {
+          color: $txt-black;
+          font-size: clamp(14px, 0.97vw, 14px);
+          line-height: 25.67px;
+          transition:
+            font-size 2s,
+            font-weight 2s,
+            line-height 2s;
+
+          @media #{$medium} {
+            font-size: clamp(12px, 1.56vw, 12px);
+          }
+        }
+      }
+    }
+  }
+}

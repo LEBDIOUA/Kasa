@@ -1,0 +1,36 @@
+@keyframes bouger {
+  0% {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  25% {
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+  50% {
+    left: 85%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  75% {
+    left: 50%;
+    top: 85%;
+    transform: translateX(-50%);
+  }
+  100% {
+    left: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes clignoter {
+  from {
+    background-color: #ff6060;
+  }
+  to {
+    background-color: black;
+  }
+}

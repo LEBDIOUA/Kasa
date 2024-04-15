@@ -1,0 +1,27 @@
+.troisPointsChargement {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+
+  p {
+    font-size: calc(18 / 16) + em;
+  }
+  .cercle {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    &:nth-of-type(1) {
+      background-color: $color-principal;
+      animation: clignoter 0.8s linear infinite;
+    }
+    &:nth-of-type(2) {
+      background-color: $color-principal;;
+      animation: clignoter 0.8s linear infinite;
+    }
+    &:nth-of-type(3) {
+      background-color: $color-principal;;
+      animation: clignoter 0.8s linear infinite;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  h1 {
+    font-size: clamp(250px, 17.36vw, 250px);
+    color: $color-principal;
+
+    @media #{$mobile} {
+      font-size: clamp(96px, 12.5vw, 96px);
+    }
+  }
+  h2 {
+    font-size: clamp(36px, 2.5vw, 36px);
+    font-weight: 500;
+    color: $color-principal;
+    text-align: center;
+
+    @media #{$mobile} {
+      font-size: clamp(18px, 2.34vw, 18px);
+    }
+  }
+  .lien {
+    font-size: clamp(18px, 1.25vw, 18px);
+    font-weight: 500;
+    color: $txt-black;
+    text-decoration: underline;
+    @media #{$mobile} {
+      font-size: clamp(14px, 1.82vw, 14px);
+    }
+  }
+}
