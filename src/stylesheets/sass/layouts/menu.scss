@@ -15,6 +15,7 @@ nav {
     gap: 26px;
     a {
       font-size: clamp(12px, 3.12vw, 24px);
+      text-transform: uppercase;
     }
   }
 }
