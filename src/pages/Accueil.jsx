@@ -31,7 +31,7 @@ function Accueil() {
         setLoading(false);
       }
       finally {
-        // Attendre au moins 1.5 secondes avant de désactiver le chargement
+        // Attendre au moins  500 millisecondes avant de désactiver le chargement
         setTimeout(() => {
           setLoading(false);
           setLoaded(true);
